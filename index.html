@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmileCare Dental</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script defer src="index.js"></script>
+</head>
+<body>
+
+<!-- Mobile Sidebar -->
+<div class="sidebar" id="sidebar" aria-hidden="true">
+  <span class="close-btn" id="closeMenu" aria-label="Close menu">×</span>
+  <a href="#home">Home</a>
+  <a href="#why-us">Why Choose Us</a>
+  <a href="#doctors">Our Team</a>
+  <a href="#testimonials">Reviews</a>
+  <a href="#contact">Book Visit</a>
+  <a href="#services">Services</a>
+  <a href="#faq">FAQ</a>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">
+      <img src="Bright Smile logo.png" alt="SmileCare Dental">
+    </a>
+    <div class="nav-actions">
+      <button class="btn-primary" data-scroll="#contact">Schedule Visit</button>
+      <button class="menu-icon" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1 data-aos="fade-up">Healthy Smiles, Confident Lives</h1>
+    <p data-aos="fade-up" data-aos-delay="200">
+      Professional dental care with modern technology and a gentle touch.
+      Your smile is our priority.
+    </p>
+    <button class="btn-secondary" data-scroll="#contact" data-aos="fade-up" data-aos-delay="400">
+      Book Appointment
+    </button>
+    <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+      <div class="stat">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">10k+</span>
+        <span class="stat-label">Happy Patients</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">4.9★</span>
+        <span class="stat-label">Patient Rating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section section-alt" id="why-us">
+  <div class="section-header" data-aos="fade-up">
+    <h2>Why Choose SmileCare?</h2>
+    <p>We combine advanced technology, experienced care, and a patient-first approach so you feel at ease every visit.</p>
+  </div>
+  <div class="why-grid">
+    <article class="why-card" data-aos="fade-up">
+      <div class="why-icon">◆</div>
+      <h3>Modern Technology</h3>
+      <p>Digital X-rays, same-day crowns, and minimally invasive techniques for faster, more comfortable treatment.</p>
+    </article>
+    <article class="why-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="why-icon">◆</div>
+      <h3>Experienced Team</h3>
+      <p>Our dentists and staff bring years of training and a commitment to continuing education and best practices.</p>
+    </article>
+    <article class="why-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="why-icon">◆</div>
+      <h3>Patient-First Care</h3>
+      <p>We listen first, explain clearly, and tailor every plan to your comfort, schedule, and goals.</p>
+    </article>
+  </div>
+</section>
+
+<!-- Meet Our Doctors -->
+<section class="section" id="doctors">
+  <div class="section-header" data-aos="fade-up">
+    <h2>Meet Our Dental Team</h2>
+    <p>A friendly, experienced team focused on gentle care and modern techniques.</p>
+  </div>
+  <div class="doctor-grid">
+    <article class="doctor-card" data-aos="fade-up">
+      <div class="doctor-image-wrap">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop" alt="Dr. Emma Roberts">
+      </div>
+      <div class="doctor-body">
+        <h3>Dr. Emma Roberts</h3>
+        <p class="doctor-role">Lead Dentist · DDS</p>
+        <p class="doctor-meta">15+ years · Cosmetic & Restorative</p>
+        <p class="doctor-bio">Dr. Emma combines advanced cosmetic techniques with a calm, reassuring chairside manner.</p>
+        <div class="doctor-tags">
+          <span>Smile makeovers</span>
+          <span>Digital dentistry</span>
+        </div>
+      </div>
+    </article>
+    <article class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="doctor-image-wrap">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop" alt="Dr. James Smith">
+      </div>
+      <div class="doctor-body">
+        <h3>Dr. James Smith</h3>
+        <p class="doctor-role">Orthodontist</p>
+        <p class="doctor-meta">Braces & Clear Aligners</p>
+        <p class="doctor-bio">Dr. James creates comfortable orthodontic plans for kids, teens, and adults.</p>
+        <div class="doctor-tags">
+          <span>Clear aligners</span>
+          <span>Adult braces</span>
+        </div>
+      </div>
+    </article>
+    <article class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="doctor-image-wrap">
+        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop" alt="Dr. Aisha Chen">
+      </div>
+      <div class="doctor-body">
+        <h3>Dr. Aisha Chen</h3>
+        <p class="doctor-role">Pediatric Dentist</p>
+        <p class="doctor-meta">Children & Teens</p>
+        <p class="doctor-bio">Dr. Aisha makes visits fun and stress-free with kid-friendly language and gentle techniques.</p>
+        <div class="doctor-tags">
+          <span>Kids' comfort</span>
+          <span>Preventive care</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Kind Words (Testimonials Carousel) -->
+<section class="section section-alt testimonials-section" id="testimonials">
+  <div class="section-header" data-aos="fade-up">
+    <h2>Kind Words From Our Patients</h2>
+    <p>Real stories from people who trust SmileCare with their smile.</p>
+  </div>
+  <div class="testimonial-carousel-wrap">
+    <div class="testimonial-track" aria-hidden="true">
+      <article class="testimonial-card">
+        <div class="testimonial-card-inner">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">The team made me feel at ease from the first visit. Clean, professional, and my teeth have never looked better.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <span class="author-name">Sarah M.</span>
+            <span class="author-detail">General care patient</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card">
+        <div class="testimonial-card-inner">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">My kids actually look forward to their checkups. Dr. Aisha is wonderful with them.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <span class="author-name">David L.</span>
+            <span class="author-detail">Parent</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card">
+        <div class="testimonial-card-inner">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">I was nervous about cosmetic work. They explained everything and the result exceeded my expectations.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <span class="author-name">Jennifer K.</span>
+            <span class="author-detail">Cosmetic patient</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card">
+        <div class="testimonial-card-inner">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">Painless, quick, and the staff remembered my name. Feels like family.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <span class="author-name">Michael T.</span>
+            <span class="author-detail">Regular patient</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card">
+        <div class="testimonial-card-inner">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">The team made me feel at ease from the first visit. Clean, professional, and my teeth have never looked better.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <span class="author-name">Sarah M.</span>
+            <span class="author-detail">General care patient</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card">
+        <div class="testimonial-card-inner">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">My kids actually look forward to their checkups. Dr. Aisha is wonderful with them.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <span class="author-name">David L.</span>
+            <span class="author-detail">Parent</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card">
+        <div class="testimonial-card-inner">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">I was nervous about cosmetic work. They explained everything and the result exceeded my expectations.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <span class="author-name">Jennifer K.</span>
+            <span class="author-detail">Cosmetic patient</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card">
+        <div class="testimonial-card-inner">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">Painless, quick, and the staff remembered my name. Feels like family.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <span class="author-name">Michael T.</span>
+            <span class="author-detail">Regular patient</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Book Your Visit -->
+<section class="section" id="contact">
+  <div class="contact-layout">
+    <div class="contact-info" data-aos="fade-right">
+      <h2>Book Your Visit</h2>
+      <p>Fill out the form and our team will reach out to confirm your appointment.</p>
+      <div class="contact-details">
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+        <p><strong>Email:</strong> hello@smilecare.com</p>
+        <p><strong>Address:</strong> 123 Bright Ave, Smile City</p>
+      </div>
+    </div>
+    <form class="contact-form" id="appointmentForm" data-aos="fade-left">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="Jane Doe">
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-field">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="service">Service</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="checkup">Routine Checkup</option>
+          <option value="cosmetic">Cosmetic Dentistry</option>
+          <option value="restorative">Restorative Care</option>
+          <option value="orthodontics">Orthodontics</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="message">Additional Details</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us anything we should know."></textarea>
+      </div>
+      <button type="submit" class="btn-primary btn-full">Submit Request</button>
+      <p class="form-status" id="formStatus" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- Our Dental Services -->
+<section class="section section-alt services-section" id="services">
+  <div class="section-header" data-aos="fade-up">
+    <span class="section-badge">What We Offer</span>
+    <h2>Our Dental Services</h2>
+    <p>From routine care to smile makeovers—everything you need under one roof.</p>
+  </div>
+  <div class="services-grid">
+    <article class="service-card" data-aos="fade-up">
+      <div class="service-card-glow"></div>
+      <div class="service-icon-wrap">
+        <span class="service-icon" aria-hidden="true">◆</span>
+      </div>
+      <h3>Routine Checkups</h3>
+      <p>Regular exams, cleanings, and X-rays to keep your teeth and gums healthy.</p>
+      <ul class="service-features">
+        <li>Thorough oral exam</li>
+        <li>Gentle cleaning</li>
+        <li>Personalized advice</li>
+      </ul>
+      <a href="#contact" class="service-cta">Book a checkup →</a>
+    </article>
+    <article class="service-card service-card--featured" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-card-glow"></div>
+      <div class="service-icon-wrap">
+        <span class="service-icon" aria-hidden="true">◆</span>
+      </div>
+      <span class="service-popular">Popular</span>
+      <h3>Cosmetic Dentistry</h3>
+      <p>Whitening, veneers, and modern treatments for a smile you'll love.</p>
+      <ul class="service-features">
+        <li>Professional whitening</li>
+        <li>Porcelain veneers</li>
+        <li>Smile makeovers</li>
+      </ul>
+      <a href="#contact" class="service-cta">Get started →</a>
+    </article>
+    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="service-card-glow"></div>
+      <div class="service-icon-wrap">
+        <span class="service-icon" aria-hidden="true">◆</span>
+      </div>
+      <h3>Restorative Care</h3>
+      <p>Crowns, bridges, and implants to restore function and confidence.</p>
+      <ul class="service-features">
+        <li>Tooth-colored fillings</li>
+        <li>Durable crowns</li>
+        <li>Implant restoration</li>
+      </ul>
+      <a href="#contact" class="service-cta">Learn more →</a>
+    </article>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="section-header" data-aos="fade-up">
+    <h2>Frequently Asked Questions</h2>
+    <p>Answers to the things patients ask us most.</p>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item" data-aos="fade-up">
+      <summary>Do you accept insurance?</summary>
+      <p>Yes. We work with most major dental plans and will help you understand your benefits and file claims.</p>
+    </details>
+    <details class="faq-item" data-aos="fade-up">
+      <summary>Does it hurt?</summary>
+      <p>We use modern techniques and gentle anesthesia to keep you comfortable. Many procedures cause little to no discomfort.</p>
+    </details>
+    <details class="faq-item" data-aos="fade-up">
+      <summary>How do I book an appointment?</summary>
+      <p>Use the form above, call us at (555) 123-4567, or email hello@smilecare.com. We'll confirm your slot quickly.</p>
+    </details>
+    <details class="faq-item" data-aos="fade-up">
+      <summary>What are your hours?</summary>
+      <p>Mon–Fri 8am–6pm, Sat 9am–2pm. We're closed Sundays.</p>
+    </details>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">
+          <img src="Bright Smile logo.png" alt="SmileCare Dental - Back to top">
+        </a>
+        <p class="footer-tagline">
+          Modern, gentle dentistry focused on comfort, technology, and personalized care for every smile.
+        </p>
+        <div class="footer-social">
+          <span class="footer-social-label">Follow us</span>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#doctors">Our Team</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Book Visit</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <p>123 Bright Ave, Smile City</p>
+        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p><a href="mailto:hello@brightsmile.com">hello@brightsmile.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon–Fri: 8am – 6pm</p>
+        <p>Sat: 9am – 2pm</p>
+        <p>Sun: Closed</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © <span id="year"></span>Bright Smile Dental. All rights reserved to <a href="https://www.linkedin.com/in/thefoysalhasan/" target="_blank" rel="noopener noreferrer" class="footer-credit">Foysal Hasan</a>.
+      </p>
+      <p class="footer-made">Made with care for healthy smiles.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 900, once: true, easing: "ease-out-cubic" });
+</script>
+</body>
+</html>
